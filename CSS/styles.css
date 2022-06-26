@@ -1,0 +1,48 @@
+.header {
+    height: 75px;
+    padding: 20px;
+    background-color: #bfb48f;
+}
+
+.main-container {
+    height: 1000px;
+    display: grid;
+    grid-template-rows: 75px 1.5fr 50px;
+    gap: 10px;
+    background-color: #163d5c;
+    padding: 10px;
+}
+
+.game-container {
+    height: 400px;
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+footer {
+  text-align: center;
+    color: white;
+    height: 50px;
+}
+
+.game-boxes {
+    height: 90px;
+    width: 90px;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-boxes:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
