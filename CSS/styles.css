@@ -1,11 +1,13 @@
 .header {
+    font-size: 80px;
+    padding: 30px;
+    font-family: 'League Gothic', sans-serif;    text-align: center;
     height: 75px;
-    padding: 20px;
     background-color: #bfb48f;
 }
 
 .main-container {
-    height: 1000px;
+    height: 950px;
     display: grid;
     grid-template-rows: 75px 1.5fr 50px;
     gap: 10px;
