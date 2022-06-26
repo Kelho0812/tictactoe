@@ -1,50 +1,52 @@
-.header {
-    font-size: 80px;
-    padding: 30px;
-    font-family: 'League Gothic', sans-serif;    text-align: center;
-    height: 75px;
-    background-color: #bfb48f;
+header {
+  font-size: 50px;
+  text-align: center;
 }
 
-.main-container {
-    height: 950px;
-    display: grid;
-    grid-template-rows: 75px 1.5fr 50px;
-    gap: 10px;
-    background-color: #163d5c;
-    padding: 10px;
+.main-wrapper {
+  background-color: #163d5c;
+  color: white;
+  padding: 5px;
+  height: 950px;
+  display: grid;
+  grid-template-rows: 0.2fr 1.5fr 0.2fr;
+  gap: 20px;
 }
 
-.game-container {
-    height: 400px;
-    align-self: center;
-    justify-self: center;
-    width: 400px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196f3;
-    padding: 10px;
+.game-wrapper {
+  background-color: #2196f3;
+  color: white;
+  padding: 5px;
+  grid-template-columns: repeat(3, minmax(75px, 150px));
+  grid-template-rows: repeat(3, minmax(75px, 150px));
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  max-height: 450px;
+}
+
+.game-boxes {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 5px;
+  min-height: 75px;
+  gap: 2px;
+  border: solid 2px black;
+  display: grid;
+  align-items: center;
+  font-size: 100px;
+  justify-content: center;
+}
+
+.game-boxes:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 footer {
   text-align: center;
-    color: white;
-    height: 50px;
-}
-
-.game-boxes {
-    height: 90px;
-    width: 90px;
-    display: grid;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.game-boxes:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
+}/*# sourceMappingURL=styles.css.map */

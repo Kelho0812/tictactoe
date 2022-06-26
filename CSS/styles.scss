@@ -1,0 +1,56 @@
+@mixin Theme($background: #163d5c, $color: white, $padding: 5px) {
+    background-color: $background;
+    color: $color;
+    padding: $padding;
+}
+
+@mixin notAllowSelect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-wrapper {
+    @include Theme();
+    height: 950px;
+    display: grid;
+    grid-template-rows: 0.2fr 1.5fr 0.2fr;
+    gap: 20px;
+}
+
+.game-wrapper {
+    @include Theme(#2196f3);
+    grid-template-columns: repeat(3, minmax(75px, 150px));
+    grid-template-rows: repeat(3, minmax(75px, 150px));
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    max-height: 450px;
+}
+
+.game-boxes {
+	@include notAllowSelect;
+    @include Theme(rgba(255, 255, 255, 0.8), black);
+    min-height: 75px;
+    gap: 2px;
+    border: solid 2px black;
+    display: grid;
+    align-items: center;
+    font-size: 100px;
+    justify-content: center;
+}
+
+.game-boxes:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+footer {
+    text-align: center;
+}
