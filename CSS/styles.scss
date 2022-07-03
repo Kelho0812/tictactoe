@@ -18,7 +18,7 @@ header {
 
 .main-wrapper {
     @include Theme();
-    height: 950px;
+    height: 975px;
     display: grid;
     grid-template-rows: 0.2fr 1.5fr 0.2fr;
     gap: 20px;
